@@ -7,8 +7,12 @@ const Router = require("koa-router");
 const app = new Koa();
 const router = new Router();
 
+//serve up static files
 app.use(serve("./public/styles"));
+
+//establishes views
 app.use(views(path.join(__dirname, "public/views"), { extention: "html" }));
+
 app.use(router.routes()).use(router.allowedMethods());
 
 router.get("/", (ctx, next) => {
