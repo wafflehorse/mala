@@ -8,7 +8,7 @@ const app = new Koa();
 const router = new Router();
 
 //serve up static files
-app.use(serve("./public/styles"));
+app.use(serve("./public"));
 
 //establishes views
 app.use(views(path.join(__dirname, "public/views"), { extention: "html" }));
