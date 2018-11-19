@@ -1,0 +1,13 @@
+.z-1 {
+  z-index: 1;
+}
+
+.absolute-centered {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.collage__element-text {
+  font-size: 30px;
+}
