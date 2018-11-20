@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../assets/mala-logo.svg";
+// import Logo from "../assets/mala-logo.svg";
 import { Link } from "react-router-dom";
 
 const Header = props => (
@@ -11,17 +11,17 @@ const Header = props => (
       </div>
       <ul className="navbar-nav">
         <li className="nav-item">
-          <Link className="nav-link" to={{ pathname: "/sauce" }}>
+          <Link className="nav-link amiko" to={{ pathname: "/sauce" }}>
             The Sauce
           </Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to={{ pathname: "/recipes" }}>
+          <Link className="nav-link amiko" to={{ pathname: "/recipes" }}>
             Recipes
           </Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to={{ pathname: "/news" }}>
+          <Link className="nav-link amiko" to={{ pathname: "/news" }}>
             Newsletter
           </Link>
         </li>

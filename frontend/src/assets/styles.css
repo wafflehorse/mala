@@ -1,3 +1,12 @@
+:root {
+  --mala-green: #bbe6b5;
+  --mala-purple: #581e3b;
+  --mala-red: #9b0a16;
+  --mala-burgundy: #76003b;
+  --mala-sand: #f1e7cd;
+  --mala-tan: #f1d68f;
+}
+
 .z-1 {
   z-index: 1;
 }
@@ -10,4 +19,32 @@
 
 .collage__element-text {
   font-size: 30px;
+}
+
+.amiko {
+  font-family: "Amiko", sans-serif;
+}
+
+.josefin-sans {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.mala-button {
+  height: 69px;
+  width: 217px;
+  border-radius: 50px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: var(--mala-green);
+  color: var(--mala-purple);
+}
+
+.active-button {
+  border-color: var(--mala-purple);
+  background-color: var(--mala-purple);
+  color: white;
+}
+
+.w-60 {
+  width: 60%;
 }

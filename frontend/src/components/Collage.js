@@ -1,4 +1,5 @@
 import React from "react";
+import TitledImage from "./ui/TitledImage";
 
 import imgChiliPepper from "../assets/img/chili-pepper.png";
 import imgFermentedBeanPaste from "../assets/img/fermented-bean-paste.png";
@@ -40,29 +41,20 @@ const collageItems = [
   }
 ];
 
-const CollageElement = props => {
+const CollageElements = () => {
   return (
-    <li
-      className="position-relative h-50 collage__element"
-      key={props.index}
-      style={{ width: props.width }}
-    >
-      <img className="w-100 h-100 collage__element-image" src={props.imgSrc} />
-      <div className="position-absolute text-center w-100 z-1 absolute-centered text-white collage__element-text">
-        {props.text}
-      </div>
-    </li>
+    <ul className="list-unstyled d-flex flex-wrap justify-content-between align-items-start collage__list">
+      {collageItems.map((item, index) => (
+        <TitledImage key={index} {...item} height={"50%"} />
+      ))}
+    </ul>
   );
 };
 
 const Collage = props => {
   return (
     <div className="w-75 h-70 mx-auto collage">
-      <ul className="list-unstyled d-flex flex-wrap align-items-start collage__list">
-        {collageItems.map((item, index) => (
-          <CollageElement {...item} index={index} />
-        ))}
-      </ul>
+      <CollageElements />
     </div>
   );
 };
