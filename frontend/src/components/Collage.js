@@ -53,7 +53,7 @@ const CollageElements = () => {
 
 const Collage = props => {
   return (
-    <div className="w-75 h-70 mx-auto collage">
+    <div className="w-75 h-70 mb-5 mx-auto collage">
       <CollageElements />
     </div>
   );

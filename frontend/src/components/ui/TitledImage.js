@@ -11,7 +11,7 @@ const TitledImage = props => {
         src={props.imgSrc}
         alt={""}
       />
-      <div className="position-absolute text-center w-100 z-1 absolute-centered text-white josefin-sans collage__element-text">
+      <div className="position-absolute text-center w-100 z-1 absolute-centered font-weight-bold text-white josefin-sans collage__element-text">
         {props.text}
       </div>
     </div>
