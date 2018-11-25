@@ -1,5 +1,5 @@
 import React from "react";
-// import Logo from "../assets/mala-logo.svg";
+import Logo from "../assets/mala-logo.svg";
 import { Link } from "react-router-dom";
 
 const Header = props => (
@@ -30,11 +30,24 @@ const Header = props => (
   </div>
 );
 
+const Footer = () => {
+  return (
+    <div className="w-100 position-relative" style={{ height: "200px" }}>
+      <div className="d-flex justify-content-between position-absolute absolute-centered w-25">
+        <a href="#">About Us</a>
+        <img src={Logo} />
+        <a href="#">Work With Us</a>
+      </div>
+    </div>
+  );
+};
+
 const Page = props => {
   return (
     <div>
       <Header />
       {props.children}
+      <Footer />
     </div>
   );
 };

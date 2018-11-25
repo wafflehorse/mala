@@ -29,7 +29,7 @@
   font-family: "Josefin Sans", sans-serif;
 }
 
-.mala-button {
+.recipe-button {
   height: 69px;
   width: 217px;
   border-radius: 50px;
@@ -37,12 +37,21 @@
   border-style: solid;
   border-color: var(--mala-green);
   color: var(--mala-purple);
+  cursor: pointer;
 }
 
-.active-button {
+.recipe-button:focus {
+  outline: none;
+}
+
+.active-recipe-button {
   border-color: var(--mala-purple);
   background-color: var(--mala-purple);
   color: white;
+}
+
+.square {
+  border-radius: 0;
 }
 
 .w-60 {
@@ -55,4 +64,28 @@
 
 .w-80 {
   width: 80%;
+}
+
+.white {
+  color: white;
+}
+
+.preorder-button {
+  width: 183px;
+  height: 68px;
+  background-color: var(--mala-green);
+  color: white;
+  border: 0;
+  cursor: pointer;
+}
+
+.preorder-button:focus {
+  outline: none;
+}
+
+.subscribe-container {
+  width: 100%;
+  height: 470px;
+  background: url("./img/subscribe-background.png") no-repeat;
+  background-size: cover;
 }

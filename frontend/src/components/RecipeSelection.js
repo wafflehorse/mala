@@ -12,14 +12,14 @@ const imageDimensions = {
 
 const RecipeSelection = props => {
   return (
-    <div>
+    <div className="mx-auto" style={{ maxWidth: "1440px" }}>
       <h2 className="text-center amiko mb-3">
         Check out Our Recipes with the Sauce
       </h2>
       <div className="d-flex justify-content-between w-60 mx-auto mb-4">
-        <button className="mala-button">Vegetarian</button>
-        <button className="mala-button active-button">Classic</button>
-        <button className="mala-button">Omnivore</button>
+        <button className="recipe-button">Vegetarian</button>
+        <button className="recipe-button active-recipe-button">Classic</button>
+        <button className="recipe-button">Omnivore</button>
       </div>
       <div
         className="d-flex mx-auto justify-content-between mb-5"

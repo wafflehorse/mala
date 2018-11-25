@@ -53,7 +53,10 @@ const CollageElements = () => {
 
 const Collage = props => {
   return (
-    <div className="w-75 h-70 mb-5 mx-auto collage">
+    <div
+      className="w-75 h-70 mb-5 mx-auto collage"
+      style={{ maxWidth: "1440px" }}
+    >
       <CollageElements />
     </div>
   );
