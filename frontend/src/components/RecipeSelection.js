@@ -1,18 +1,18 @@
-import React from "react";
+import React from 'react';
 
-import TitledImage from "./ui/TitledImage";
+import TitledImage from './ui/TitledImage';
 
-import imgMalaFishFillet from "../assets/img/mala-fish-fillet.png";
-import imgMapoTofu from "../assets/img/mapo-tofu.png";
+import imgMalaFishFillet from '../assets/img/mala-fish-fillet.png';
+import imgMapoTofu from '../assets/img/mapo-tofu.png';
 
 const imageDimensions = {
-  width: "446px",
-  height: "336px"
+  width: '446px',
+  height: '336px',
 };
 
 const RecipeSelection = props => {
   return (
-    <div className="mx-auto" style={{ maxWidth: "1440px" }}>
+    <div className="mx-auto" style={{maxWidth: '1440px'}}>
       <h2 className="text-center amiko mb-3">
         Check out Our Recipes with the Sauce
       </h2>
@@ -21,18 +21,15 @@ const RecipeSelection = props => {
         <button className="recipe-button active-recipe-button">Classic</button>
         <button className="recipe-button">Omnivore</button>
       </div>
-      <div
-        className="d-flex mx-auto justify-content-between mb-5"
-        style={{ width: "900px" }}
-      >
+      <div className="w-65 d-flex mx-auto justify-content-between mb-5">
         <TitledImage
           {...imageDimensions}
-          text={"Mala Fish Fillet"}
+          text={'Mala Fish Fillet'}
           imgSrc={imgMalaFishFillet}
         />
         <TitledImage
           {...imageDimensions}
-          text={"Mapo Tofu"}
+          text={'Mapo Tofu'}
           imgSrc={imgMapoTofu}
         />
       </div>

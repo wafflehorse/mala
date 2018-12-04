@@ -1,26 +1,25 @@
-import React from "react";
-import Collage from "./Collage";
-import RecipeSelection from "./RecipeSelection";
-import Facts from "./Facts";
-import Subscribe from "./Subscribe";
+import React from 'react';
+import Collage from './Collage';
+import RecipeSelection from './RecipeSelection';
+import Facts from './Facts';
+import Subscribe from './Subscribe';
 
-import preorderArrow from "../assets/img/preorder-arrow.svg";
+import preorderArrow from '../assets/img/preorder-arrow.svg';
 
 const Preorder = () => {
   return (
     <div
       className="d-flex justify-content-between mx-auto mb-5"
-      style={{ width: "230px" }}
-    >
-      <div className="d-inline" style={{ width: "183px" }}>
-        <button className="preorder-button amiko d-block mb-4">
+      style={{paddingLeft: '27px', width: '230px'}}>
+      <div className="d-inline" style={{width: '183px'}}>
+        <button className="preorder-button amiko d-block mb-2">
           Pre-order
         </button>
-        <a href="#" className="amiko">
+        <a href="#" className="amiko black">
           or get free samples
         </a>
       </div>
-      <img src={preorderArrow} alt="" />
+      <img src={preorderArrow} alt="" style={{marginLeft: '10px'}} />
     </div>
   );
 };
@@ -29,7 +28,7 @@ const Home = props => {
   return (
     <div>
       <Collage />
-      <h2 className="text-center mb-3 amiko font-weight-bold">
+      <h2 className="text-center mb-3 amiko">
         All the Above Come Together to Make
         <br />
         Mala Sauce

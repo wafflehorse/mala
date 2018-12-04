@@ -66,6 +66,10 @@
   width: 60%;
 }
 
+.w-65 {
+  width: 65%;
+}
+
 .w-70 {
   width: 70%;
 }
@@ -104,4 +108,11 @@
   height: 470px;
   background: url('./img/subscribe-background.png') no-repeat;
   background-size: cover;
+}
+
+.subscribe-btn {
+  color: white;
+  border-color: white;
+  border-left: 0;
+  background-color: var(--mala-green);
 }

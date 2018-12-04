@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Subscribe = () => {
   return (
@@ -9,8 +9,7 @@ const Subscribe = () => {
       <div className="subscribe-container position-relative">
         <div
           className="position-absolute absolute-centered w-75"
-          style={{ maxWidth: "1000px" }}
-        >
+          style={{maxWidth: '1000px'}}>
           <h3 className="amiko white text-center">
             Curious about the 100+ kinds of chili in Sichuan?
             <br /> Subscribe to our monthly newsletter.
@@ -24,7 +23,9 @@ const Subscribe = () => {
               aria-describedby="basic-addon1"
             />
             <div className="input-group-prepend">
-              <button className="btn btn-outline-secondary" type="button">
+              <button
+                className="btn btn-outline-secondary subscribe-btn"
+                type="button">
                 Subscribe
               </button>
             </div>
