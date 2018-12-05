@@ -5,6 +5,7 @@
   "main": "app.js",
   "dependencies": {
     "koa": "^2.5.3",
+    "koa-router": "^7.4.0",
     "path": "^0.12.7"
   },
   "devDependencies": {},
